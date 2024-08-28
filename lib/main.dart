@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart'; //inicio
 
 void main() {
   runApp(MyApp());
@@ -122,7 +122,7 @@ Widget buildCircularButton(String text, BuildContext context, {double diameter =
   );
 }
 
-void handleButtonPress(String text, BuildContext context) {
+void handleButtonPress(String text, BuildContext context) { //controle de animaçoes entre janelas
   switch (text) {
     case 'ABRIR JANELAS':
       Navigator.push(
@@ -169,7 +169,7 @@ void handleButtonPress(String text, BuildContext context) {
 }
 
 
-void showEmergencyDialog(BuildContext context) {
+void showEmergencyDialog(BuildContext context) { // caixa de emergencia
   showDialog(
     context: context,
     builder: (BuildContext context) {
@@ -186,7 +186,7 @@ void showEmergencyDialog(BuildContext context) {
         content: Container(
           width: double.maxFinite,
           padding: EdgeInsets.all(20.0),
-          child: Column(
+          child: const Column(
             mainAxisSize: MainAxisSize.min,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -226,7 +226,7 @@ class CommunicatorScreen extends StatelessWidget {
         backgroundColor: Colors.deepOrange,
       ),
       body: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           gradient: LinearGradient(
             colors: [Colors.red, Colors.purple],
             begin: Alignment.topLeft,
@@ -264,7 +264,7 @@ class CommunicatorScreen extends StatelessWidget {
 }
 
 
-class WindowControlScreen extends StatelessWidget {
+class WindowControlScreen extends StatelessWidget { // tela de controle de janelas
     @override
     Widget build(BuildContext context) {
       return Scaffold(
@@ -308,7 +308,7 @@ class WindowControlScreen extends StatelessWidget {
     }
   }
 
-class SettingsScreen extends StatelessWidget {
+class SettingsScreen extends StatelessWidget { //tela de configurações
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -317,7 +317,7 @@ class SettingsScreen extends StatelessWidget {
         backgroundColor: Colors.deepOrange,
       ),
       body: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           gradient: LinearGradient(
             colors: [Colors.red, Colors.purple],
             begin: Alignment.topLeft,
@@ -371,7 +371,7 @@ class EmergencyMessagesScreen extends StatelessWidget {
         title: Text('Mensagens de Emergência'),
         backgroundColor: Colors.deepOrange,
       ),
-      body: Center(
+      body: const Center(
         child: Text('Conteúdo de Mensagens de Emergência'),
       ),
     );
