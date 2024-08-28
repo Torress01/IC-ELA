@@ -169,7 +169,7 @@ void handleButtonPress(String text, BuildContext context) {
 }
 
 
-void showEmergencyDialog(BuildContext context) { //caixa de emergencia
+void showEmergencyDialog(BuildContext context) {
   showDialog(
     context: context,
     builder: (BuildContext context) {
@@ -217,7 +217,7 @@ void showEmergencyDialog(BuildContext context) { //caixa de emergencia
   );
 }
 
-class CommunicatorScreen extends StatelessWidget { //tela do comunicador
+class CommunicatorScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
