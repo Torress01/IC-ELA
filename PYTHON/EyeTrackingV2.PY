@@ -1,7 +1,6 @@
 import mediapipe as mp
 import cv2
 import pyautogui
-import time
 
 pyautogui.FAILSAFE = False  # desativa a função de desligar o uso do olhar
 sensibilidade_do_modelo = 20
